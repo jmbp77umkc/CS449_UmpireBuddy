@@ -10,7 +10,6 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -47,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
         ( (TextView)findViewById(R.id.countBall) ).setText(Integer.toString(valueBall));
         ( (TextView)findViewById(R.id.countOut) ).setText(Integer.toString(valueOut));
 
-        ( (Button)findViewById(R.id.buttonStrike) ).setOnClickListener(viewOnClickListener);
-        ( (Button)findViewById(R.id.buttonBall) ).setOnClickListener(viewOnClickListener);
+        findViewById(R.id.buttonStrike).setOnClickListener(viewOnClickListener);
+        findViewById(R.id.buttonBall).setOnClickListener(viewOnClickListener);
 
     }
 
